@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Set decoration geometry
+berryc border_width		0
+berryc inner_border_width	8
+berryc title_height		0
+berryc edge_gap			20 20 20 20
+
+# Set decoration colours
+berryc inner_focus_color	ebdbb2
+berryc inner_unfocus_color	d5c4a1
+
+# Other options
+berryc smart_place "true"
+berryc draw_text "true"
+berryc edge_lock "true"
+berryc set_font "Dina-9"
+
+feh --bg-tile ~/Documents/Illustrations/gruv-one-pixel-bg.png
+alacritty
