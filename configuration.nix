@@ -45,9 +45,7 @@
       lightdm.enable = true;
       defaultSession = "none+berry";
     };
-    windowManager = {
-      berry.enable = true;
-    };
+    windowManager.berry.enable = true;
   };
 
   # Enable CUPS to print documents.
@@ -67,10 +65,8 @@
   };
 
   # List packages installed in system profile. To search, run:
-  environment.systemPackages = with pkgs; [
-    sxhkd
-  ];
-  
+  # environment.systemPackages = with pkgs; [];
+
   # Fonts for the system
   fonts.fonts = with pkgs; [
     noto-fonts
@@ -78,7 +74,7 @@
     noto-fonts-emoji
     noto-fonts-extra
   ];
-  
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
@@ -112,4 +108,3 @@
   system.stateVersion = "22.11"; # Did you read the comment?
 
 }
-
